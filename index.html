@@ -1,0 +1,391 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mac-Cafe | Premium Indian Cafe Experience</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <style>
+        :root {
+            --primary-color: #945629;
+            --secondary-color: #c67338;
+        }
+        .navbar {
+            background-color: var(--primary-color) !important;
+        }
+        body{
+            font-family: 'Arial', sans-serif;
+            color: #333;
+            background-color: #f9f7f5;
+        }
+        .hero {
+            background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url('https://images.unsplash.com/photo-1495474472287-4d71bcdd2085');
+            background-size: cover;
+            background-position: center;
+            height: 100vh;
+            display: flex;
+            align-items: center;
+        }
+        .btn-primary {
+            background-color: var(--primary-color);
+            border-color: var(--primary-color);
+        }
+        .btn-primary:hover {
+            background-color: var(--secondary-color);
+            border-color: var(--secondary-color);
+        }
+        .card {
+            transition: transform 0.3s;
+        }
+        .card:hover {
+            transform: translateY(-5px);
+        }
+        .price {
+            color: var(--primary-color);
+            font-size: 1.4rem;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="#home">Mac-Cafe</a>
+            <button class="navbar-toggler shadow-none " type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto text-center">
+                    <li class="nav-item"><a class="nav-link" href="#menu">Menu</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#services">Services</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <section class="hero" id="home">
+        <div class="container text-center text-white">
+            <h1 class="display-3 mb-4">Welcome to Mac-Cafe</h1>
+            <p class="lead mb-4">Experience the perfect fusion of modern cafe culture and authentic Indian flavors</p>
+            <a href="#menu" class="btn btn-primary btn-lg">View Menu</a>
+        </div>
+    </section>
+
+    <section id="menu" class="py-5">
+        <div class="container">
+            <h2 class="text-center mb-5">Our Signature Menu</h2>
+            <div class="row g-4">
+                <div class="col-md-6 col-lg-3">
+                    <div class="card h-100">
+                        <div class="card-body">
+                            <img src="./capacuno.jpg" alt="img" class="img-fluid mb-3 rounded">
+                            <h3 class="card-title">Masala Coffee</h3>
+                            <p class="card-text">Rich coffee blend with aromatic Indian spices</p>
+                            <p class="price">₹150</p>
+                            
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3">
+                    <div class="card h-100">
+                        <div class="card-body">
+                            <img src="./ice.jpg" alt="img" class="img-fluid mb-3 rounded">
+                            <h3 class="card-title">Ice-Coffee</h3>
+                            <p class="card-text">Brewed coffee that's served cold, often over ice.</p>
+                            <p class="price">₹199</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3">
+                    <div class="card h-100">
+                        <div class="card-body">
+                            <img src="./capacuno.jpg" alt="img" class="img-fluid mb-3 rounded">
+                            <h3 class="card-title">Cappuccino</h3>
+                            <p class="card-text"> A classic Italian espresso-based hot drink with equal parts espresso, steamed milk, and milk foam.</p>
+                            <p class="price">₹150</p>
+                        </div>
+                    </div>
+                </div>
+                 <div class="col-md-6 col-lg-3">
+                    <div class="card h-100">
+                        <div class="card-body">
+                            <img src="./shake.jpg" alt="img" class="img-fluid mb-3 rounded">
+                            <h3 class="card-title">Cold Coffee</h3>
+                            <p class="card-text"> Similar to iced coffee, but blended like a shake and usually creamier.</p>
+                            <p class="price">₹150</p>
+                        </div>
+                    </div>
+                </div>
+                 <div class="col-md-6 col-lg-3">
+                    <div class="card h-100">
+                        <div class="card-body">
+                            <img src="./hot-chokalate.jpg" alt="img" class="img-fluid mb-3 rounded">
+                            <h3 class="card-title">Hot Chocolate</h3>
+                            <p class="card-text">  A warm, comforting beverage made with melted chocolate or cocoa powder.</p>
+                            <p class="price">₹150</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3">
+                    <div class="card h-100">
+                        <div class="card-body">
+                            <img src="./strawbery.jpg" alt="img" class="img-fluid mb-3 rounded">
+                            <h3 class="card-title">Strawberry Shake</h3>
+                            <p class="card-text">A cold, sweet, and creamy milk-based drink flavored with strawberries.</p>
+                            <p class="price">₹199</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="about" class="py-5 bg-light">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-6 mb-4 mb-lg-0">
+                    <h2 class="mb-4">Our Story</h2>
+                    <p class="lead">Mac-Cafe was born from a passion to create a unique dining experience that bridges the gap between traditional Indian flavors and contemporary cafe culture.</p>
+                    <p>Since our establishment in 2020, we've been committed to serving premium quality beverages and innovative fusion dishes. Our expert chefs and baristas work with carefully selected ingredients to create memorable culinary experiences.</p>
+                </div>
+                <div class="col-lg-6">
+                    <img src="https://images.unsplash.com/photo-1495474472287-4d71bcdd2085" class="img-fluid rounded" alt="Mac-Cafe Interior">
+                </div>
+            </div>
+        <div class="text-center mt-5">
+            <h3>Join Us Today!</h3>
+            <p>Experience the perfect blend of tradition and innovation at Mac-Cafe.</p>
+            <a href="#contact" class="btn btn-primary">Get in Touch</a>
+
+
+        </div>
+    </section>
+
+    
+    <section id="benefits" class="py-5">
+        <div class="container">
+            <h2 class="text-center mb-4">Benefits of Visiting a Cafe</h2>
+            <div class="row g-4">
+                <div class="col-md-6 col-lg-4">
+                    <div class="d-flex align-items-start">
+                        <i class="fas fa-coffee fa-2x text-primary me-3"></i>
+                        <div>
+                            <h5 class="mb-1">Quality Drinks & Food</h5>
+                            <p class="mb-0">Carefully crafted beverages and fresh menu items provide consistent, enjoyable flavors.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-lg-4">
+                    <div class="d-flex align-items-start">
+                        <i class="fas fa-couch fa-2x text-primary me-3"></i>
+                        <div>
+                            <h5 class="mb-1">Comfort & Ambiance</h5>
+                            <p class="mb-0">A pleasant environment for relaxing, reading, or spending time with friends.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-lg-4">
+                    <div class="d-flex align-items-start">
+                        <i class="fas fa-users fa-2x text-primary me-3"></i>
+                        <div>
+                            <h5 class="mb-1">Social Connection</h5>
+                            <p class="mb-0">A natural meeting place for conversations, networking, and community building.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-lg-4">
+                    <div class="d-flex align-items-start">
+                        <i class="fas fa-wifi fa-2x text-primary me-3"></i>
+                        <div>
+                            <h5 class="mb-1">Productivity & Remote Work</h5>
+                            <p class="mb-0">Reliable Wi‑Fi, power outlets, and an energizing atmosphere for work or study.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-lg-4">
+                    <div class="d-flex align-items-start">
+                        <i class="fas fa-leaf fa-2x text-primary me-3"></i>
+                        <div>
+                            <h5 class="mb-1">Support Local Economy</h5>
+                            <p class="mb-0">Choosing local cafes helps small businesses, local suppliers, and sustainable practices.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-lg-4">
+                    <div class="d-flex align-items-start">
+                        <i class="fas fa-calendar-alt fa-2x text-primary me-3"></i>
+                        <div>
+                            <h5 class="mb-1">Events & Experiences</h5>
+                            <p class="mb-0">Workshops, live music, and themed events create memorable experiences beyond food and drink.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+
+    <section id="services" class="py-5">
+        <div class="container">
+            <h2 class="text-center mb-5">Our Services</h2>
+            <div class="row g-4">
+                <div class="col-md-6 col-lg-3">
+                    <div class="card h-100 text-center">
+                        <div class="card-body">
+                            <i class="fas fa-utensils fa-3x mb-3 text-primary"></i>
+                            <h3 class="card-title">Premium Dine-In</h3>
+                            <p class="card-text">Elegant ambiance with comfortable seating</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3">
+                    <div class="card h-100 text-center">
+                        <div class="card-body">
+                            <i class="fas fa-shopping-bag fa-3x mb-3 text-primary"></i>
+                            <h3 class="card-title">Express Takeaway</h3>
+                            <p class="card-text">Quick service for busy professionals</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3">
+                    <div class="card h-100 text-center">
+                        <div class="card-body">
+                            <i class="fas fa-briefcase fa-3x mb-3 text-primary"></i>
+                            <h3 class="card-title">Corporate Catering</h3>
+                            <p class="card-text">Customized menus for business events</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3">
+                    <div class="card h-100 text-center">
+                        <div class="card-body">
+                            <i class="fas fa-glass-cheers fa-3x mb-3 text-primary"></i>
+                            <h3 class="card-title">Private Events</h3>
+                            <p class="card-text">Special arrangements for celebrations</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section><br>
+
+    <section id="contact" class="py-5 bg-light">
+        <div class="container">
+            <h2 class="text-center mb-5">Contact Us</h2>
+            <div class="row">
+                <div class="col-lg-6 mb-4 mb-lg-0">
+                    <div class="card h-100">
+                        <div class="card-body">
+                            <h3 class="card-title">Visit Us</h3>
+                            <p class="card-text">123 Cuisine Street, Mumbai<br>Maharashtra, India</p>
+                            <h3 class="card-title mt-4">Opening Hours</h3>
+                            <p class="card-text">Monday to Sunday: 8:00 AM - 11:00 PM</p>
+                            <h3 class="card-title mt-4">Get in Touch</h3>
+                            <p class="card-text">Phone: +91 98765 43210<br>Email: info@mac-cafe.com</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="card">
+                        <div class="card-body">
+                            <form>
+                                <div class="mb-3">
+                                    <input type="text" class="form-control" placeholder="Your Name" required>
+                                </div>
+                                <div class="mb-3">
+                                    <input type="email" class="form-control" placeholder="Your Email" required>
+                                </div>
+                                <div class="mb-3">
+                                    <textarea class="form-control" rows="5" placeholder="Your Message" required></textarea>
+                                </div>
+                                <button type="submit" class="btn btn-primary">Send Message</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section><br>
+
+    <footer class="bg-dark text-white py-4">
+        <div class="container text-center">
+            <h3>Mac-Cafe</h3>
+            <p>Where tradition meets innovation</p>
+            <div class="mt-4">
+                <a href="#" class="text-white me-3"><i class="fab fa-facebook-f"></i></a>
+                <a href="#" class="text-white me-3"><i class="fab fa-instagram"></i></a>
+                <a href="#" class="text-white"><i class="fab fa-twitter"></i></a>
+            </div>
+            <p class="mt-4 mb-0">&copy; 2024 Mac-Cafe. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.13.0/gsap.min.js" integrity="sha512-NcZdtrT77bJr4STcmsGAESr06BYGE8woZdSdEgqnpyqac7sugNO+Tr4bGwGF3MsnEkGKhU2KL2xh6Ec+BqsaHA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.13.0/ScrollTrigger.min.js" integrity="sha512-P2IDYZfqSwjcSjX0BKeNhwRUH8zRPGlgcWl5n6gBLzdi4Y5/0O4zaXrtO4K9TZK6Hn1BenYpKowuCavNandERg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <script>
+        gsap.registerPlugin(ScrollTrigger);
+
+        
+
+        gsap.from(".card", {
+            duration: 0.5,
+            y: 50,
+            opacity: 0,
+            stagger: 0.2,
+            scrollTrigger: {
+                trigger: "#menu",
+                start: "top center"
+            }
+        });
+
+        gsap.from("#about img", {
+            duration: 1,
+            scale: 0.8,
+            opacity: 0,
+            ease: "power2.out",
+            scrollTrigger: {
+                trigger: "#about",
+                start: "top center",
+                
+            }
+        });
+        gsap.from("#services ", {
+            duration: 0.5,
+            y: -50,
+            opacity: 0,
+            stagger: 0.2,
+             ease: "power2.out",
+
+            scrollTrigger: {
+                trigger: "#services",
+                start: "top center",
+                toggleActions: "play none none reverse"
+                
+            }
+        });
+        gsap.from("#contact ", {
+            duration: 0.5,
+            y: -50,
+            opacity: 0,
+             ease: "power2.out",
+
+            scrollTrigger: {
+                trigger: "#contact",
+                start: "top center",
+                toggleActions: "play none none reverse"
+            }
+        });
+
+    </script>
+</body>
+</html>
